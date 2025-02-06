@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Cadena de Caracteres (String) | PragamacionEstructurada </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Irving Torres Viveros" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-21"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">PragamacionEstructurada</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programación Estructurada</a></li>
+   <li><a href="1_introduccin_a_la_programacin_estructurada.html" class="daddy">1. Introducción a la programación estructurada.</a>
+   <ul class="other-section">
+      <li><a href="11_clasificacin_de_paradigmas_de_programacin.html" class="no-ch">1.1 Clasificación de paradigmas de programación</a></li>
+      <li><a href="12_entornos_de_desarrollo_integrados.html" class="no-ch">1.2 Entornos de desarrollo integrados</a></li>
+      <li><a href="13_buenas_prcticas_de_codificacin.html" class="no-ch">1.3 Buenas prácticas de codificación</a></li>
+      <li><a href="14_documentacin_de_cdigo.html" class="no-ch">1.4 Documentación de código</a></li>
+   </ul>
+   </li>
+   <li><a href="2_estructuras_de_control.html" class="daddy">2. Estructuras de Control</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_datos_y_funciones_de_entradasalidaio_en_la_programacin_estructurada.html" class="no-ch">2.1 Tipos de datos y funciones de entrada-salida(I/O) en la programación estructurada.</a></li>
+      <li><a href="22_estructuras_de_control_selectivas_e_iterativas.html" class="no-ch">2.2 Estructuras de control Selectivas e Iterativas</a></li>
+      <li><a href="23_sintaxis_de_un_lenguaje_de_programacin_estructurada.html" class="no-ch">2.3 Sintaxis de un lenguaje de programación estructurada</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="python.html" class="current-page-parent daddy">Python</a>
+   <ul>
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="instalacin_e_idle.html" class="no-ch">Instalación e IDLE</a></li>
+      <li><a href="tipos_de_ejecucin.html" class="no-ch">Tipos de ejecución</a></li>
+      <li class="current-page-parent"><a href="tipos_de_datos.html" class="current-page-parent daddy">Tipos de Datos</a>
+      <ul>
+         <li><a href="type.html" class="no-ch">type()</a></li>
+         <li><a href="numricos_o_nmeros_clases_int_y_float.html" class="no-ch">Numéricos o Números (clases int y float)</a></li>
+         <li><a href="booleanos.html" class="no-ch">Booleanos</a></li>
+         <li id="active"><a href="cadena_de_caracteres_string.html" class="active daddy">Cadena de Caracteres (String)</a>
+         <ul>
+            <li><a href="mtodos_de_cadena_de_caracteres.html" class="no-ch">Métodos de Cadena de Caracteres</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="variables.html" class="no-ch">Variables</a></li>
+      <li><a href="entrada_y_salida_por_terminal.html" class="daddy">Entrada y Salida por Terminal</a>
+      <ul class="other-section">
+         <li><a href="entrada_por_terminal_input.html" class="no-ch">Entrada por terminal (input())</a></li>
+         <li><a href="salida_por_terminal_print.html" class="no-ch">Salida por terminal (print())</a></li>
+      </ul>
+      </li>
+      <li><a href="operadores.html" class="daddy">Operadores</a>
+      <ul class="other-section">
+         <li><a href="operadores_aritmeticos.html" class="no-ch">Operadores Aritmeticos</a></li>
+         <li><a href="pemdas.html" class="no-ch">PEMDAS</a></li>
+         <li><a href="operadores_lgicos.html" class="no-ch">Operadores Lógicos</a></li>
+         <li><a href="operadores_relacionales.html" class="no-ch">Operadores Relacionales</a></li>
+      </ul>
+      </li>
+      <li><a href="sentencia_condicional_if.html" class="no-ch">Sentencia Condicional IF</a></li>
+      <li><a href="comentario.html" class="no-ch">Comentario</a></li>
+      <li><a href="lista.html" class="daddy">Lista</a>
+      <ul class="other-section">
+         <li><a href="agregar_elemento.html" class="no-ch">Agregar elemento</a></li>
+         <li><a href="remover_elemento.html" class="no-ch">Remover elemento</a></li>
+         <li><a href="index0.html" class="no-ch">index</a></li>
+         <li><a href="cambiar_un_elemento.html" class="no-ch">Cambiar un elemento</a></li>
+      </ul>
+      </li>
+      <li><a href="tupla.html" class="no-ch">Tupla</a></li>
+      <li><a href="ejercicios_de_datos_simples.html" class="no-ch">Ejercicios de Datos Simples</a></li>
+      <li><a href="ciclo_for.html" class="no-ch">Ciclo For</a></li>
+      <li><a href="ciclo_while.html" class="no-ch">Ciclo While</a></li>
+      <li><a href="funciones.html" class="no-ch">Funciones</a></li>
+      <li><a href="recursin.html" class="no-ch">Recursión</a></li>
+      <li><a href="archivo.html" class="no-ch">Archivo</a></li>
+      <li><a href="importaciones.html" class="no-ch">Importaciones</a></li>
+      <li><a href="errores.html" class="no-ch">Errores</a></li>
+      <li><a href="programacin_orientada_a_objetos.html" class="no-ch">Programación Orientada a Objetos</a></li>
+      <li><a href="ejercicios_cadenas.html" class="no-ch">Ejercicios Cadenas</a></li>
+      <li><a href="ejercicios_condicionales.html" class="no-ch">Ejercicios Condicionales</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="booleanos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="mtodos_de_cadena_de_caracteres.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Cadena de Caracteres (String)</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id205">
+<div class="iDevice emphasis0" >
+<div id="ta205_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Secuencia de caracteres encerrados entre comillas y usados para representar texto en el programa.</p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id206">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Cadenas (class 'str')</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta206_146_2" class="block iDevice_content">
+<div class="exe-text"><p>Secuencia de caracteres alfanuméricos que representan texto. Se escriben entre comillas sencillas ’ o dobles “.</p>
+<div class="highlighted-code language-python">
+<div>
+<pre><code>'Python'
+"123"
+'True'
+# Cadena vacía
+''
+# Cadena con un espacio en blanco
+' '
+# Cambio de línea
+'\n'
+# Tabulador
+'\t'</code></pre>
+</div>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id207">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">leng ()</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta207_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Tamaño (length)</p>
+<p>Número de caracteres que posee una cadena.</p>
+<p>Longitud de cadena de caracteres.</p>
+<div class="highlighted-code language-python">
+<pre><code>len("cadena")
+&gt;6</code></pre>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id208">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Índice</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta208_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Estructura interna una cadena de caracteres </p>
+<table border="1" style="width: 39.1645%;" height="53">
+<tbody>
+<tr>
+<td style="width: 12.5%; text-align: center;">"</td>
+<td style="width: 12.5%; text-align: center;">P</td>
+<td style="width: 12.5%; text-align: center;">y</td>
+<td style="width: 12.5%; text-align: center;">t</td>
+<td style="width: 12.5%; text-align: center;">h</td>
+<td style="width: 12.5%; text-align: center;">o</td>
+<td style="width: 12.5%; text-align: center;">n</td>
+<td style="width: 12.5%; text-align: center;">"</td>
+</tr>
+<tr>
+<td style="width: 12.5%; text-align: center;"></td>
+<td style="width: 12.5%; text-align: center;">0</td>
+<td style="width: 12.5%; text-align: center;">1</td>
+<td style="width: 12.5%; text-align: center;">2</td>
+<td style="width: 12.5%; text-align: center;">3</td>
+<td style="width: 12.5%; text-align: center;">4</td>
+<td style="width: 12.5%; text-align: center;">5</td>
+<td style="width: 12.5%; text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<p>Indexación</p>
+<div class="highlighted-code language-python">
+<div>
+<pre><code>&gt;&gt;&gt; palabra = "Python"
+&gt;&gt;&gt; palabra [0]
+'P'
+&gt;&gt;&gt; palabra [1]
+'y'
+&gt;&gt;&gt; palabra [2]
+'t'
+&gt;&gt;&gt; palabra [3]
+'h'
+
+</code></pre>
+</div>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id209">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Selecciona la respuesta correcta</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-209_86" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion209_86" class="block question iDevice_content">
+<p>Selecciona el caracter ubicado en el índice 6 de esta cadena de caracteres: "¡Hola, Mundo!"</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i209_89" class="sr-av"><a href="#answer-209_89">Opción 1</a></label><input type="radio" name="option209_86" id="i209_89" class="exe-radio-option exe-radio-option-0-4-209_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-209_89"><div id="taans209_89" class="block iDevice_content">
+<p>"a"</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i209_92" class="sr-av"><a href="#answer-209_92">Opción 2</a></label><input type="radio" name="option209_86" id="i209_92" class="exe-radio-option exe-radio-option-1-4-209_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-209_92"><div id="taans209_92" class="block iDevice_content">
+<p>","</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i209_258" class="sr-av"><a href="#answer-209_258">Opción 3</a></label><input type="radio" name="option209_86" id="i209_258" class="exe-radio-option exe-radio-option-2-4-209_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-209_258"><div id="taans209_258" class="block iDevice_content">
+<p>" "</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i209_261" class="sr-av"><a href="#answer-209_261">Opción 4</a></label><input type="radio" name="option209_86" id="i209_261" class="exe-radio-option exe-radio-option-3-4-209_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-209_261"><div id="taans209_261" class="block iDevice_content">
+<p>"M"</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b209_86" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b209_86" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b209_86" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+<section id="sa3b209_86" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-209_89">Incorrecto</a><span> (<a href="#sa0b209_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-209_92">Incorrecto</a><span> (<a href="#sa1b209_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-209_258">Opción correcta</a><span> (<a href="#sa2b209_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-209_261">Incorrecto</a><span> (<a href="#sa3b209_86">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-209_95" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion209_95" class="block question iDevice_content">
+<p>Selecciona el caracter ubicado en el índice 8 de esta cadena de caracteres: "¡Hola, Mundo!"</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i209_98" class="sr-av"><a href="#answer-209_98">Opción 1</a></label><input type="radio" name="option209_95" id="i209_98" class="exe-radio-option exe-radio-option-0-4-209_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-209_98"><div id="taans209_98" class="block iDevice_content">
+<p>"o"</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i209_101" class="sr-av"><a href="#answer-209_101">Opción 2</a></label><input type="radio" name="option209_95" id="i209_101" class="exe-radio-option exe-radio-option-1-4-209_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-209_101"><div id="taans209_101" class="block iDevice_content">
+<p>"M"</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i209_264" class="sr-av"><a href="#answer-209_264">Opción 3</a></label><input type="radio" name="option209_95" id="i209_264" class="exe-radio-option exe-radio-option-2-4-209_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-209_264"><div id="taans209_264" class="block iDevice_content">
+<p>"u"</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i209_270" class="sr-av"><a href="#answer-209_270">Opción 4</a></label><input type="radio" name="option209_95" id="i209_270" class="exe-radio-option exe-radio-option-3-4-209_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-209_270"><div id="taans209_270" class="block iDevice_content">
+<p>"d"</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b209_95" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b209_95" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b209_95" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+<section id="sa3b209_95" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-209_98">Incorrecto</a><span> (<a href="#sa0b209_95">Retroalimentación</a>)</span></li>
+<li><a href="#answer-209_101">Incorrecto</a><span> (<a href="#sa1b209_95">Retroalimentación</a>)</span></li>
+<li><a href="#answer-209_264">Opción correcta</a><span> (<a href="#sa2b209_95">Retroalimentación</a>)</span></li>
+<li><a href="#answer-209_270">Incorrecto</a><span> (<a href="#sa3b209_95">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id210">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Rebanado (Slicing)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta210_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Tomar una porción de una cadena de caracteres.</p>
+<p>&lt;cadena&gt; [inicio:fin]<br />Índice que marca el inicio de la rebanada e índice que marca el fin de la rebanada.</p>
+<p>El índice final no se incluye en el resultado.</p>
+<div class="highlighted-code language-python">
+<div>
+<pre><code>palabra = "Python" 
+palabra [0:4]
+"Pyth"</code></pre>
+</div>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper MultichoiceIdevice em_iDevice em_iDevice_question" id="id211">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Selecciona la respuesta correcta </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-211_86" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion211_86" class="block question iDevice_content">
+<p>Selecciona la rebanada resultante:</p>
+<p>frase = "¡Hola, Mundo!"</p>
+<p>frase [7:12]</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i211_89" class="sr-av"><a href="#answer-211_89">Opción 1</a></label><input type="radio" name="option211_86" id="i211_89" class="exe-radio-option exe-radio-option-0-4-211_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-211_89"><div id="taans211_89" class="block iDevice_content">
+<p>Hola</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i211_92" class="sr-av"><a href="#answer-211_92">Opción 2</a></label><input type="radio" name="option211_86" id="i211_92" class="exe-radio-option exe-radio-option-1-4-211_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-211_92"><div id="taans211_92" class="block iDevice_content">
+<p>Mundo</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i211_276" class="sr-av"><a href="#answer-211_276">Opción 3</a></label><input type="radio" name="option211_86" id="i211_276" class="exe-radio-option exe-radio-option-2-4-211_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-211_276"><div id="taans211_276" class="block iDevice_content">
+<p>, Mund</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i211_279" class="sr-av"><a href="#answer-211_279">Opción 4</a></label><input type="radio" name="option211_86" id="i211_279" class="exe-radio-option exe-radio-option-3-4-211_86-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-211_279"><div id="taans211_279" class="block iDevice_content">
+<p>Mundo!</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b211_86" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b211_86" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+<section id="sa2b211_86" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa3b211_86" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-211_89">Incorrecto</a><span> (<a href="#sa0b211_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-211_92">Opción correcta</a><span> (<a href="#sa1b211_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-211_276">Incorrecto</a><span> (<a href="#sa2b211_86">Retroalimentación</a>)</span></li>
+<li><a href="#answer-211_279">Incorrecto</a><span> (<a href="#sa3b211_86">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<section class="question">
+<form name="multi-choice-form-211_95" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion211_95" class="block question iDevice_content">
+<p>Selecciona la rebanada resultante.</p>
+<p>frase = "¡Hola, Mundo!"</p>
+<p>frase [7:12:2]</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i211_98" class="sr-av"><a href="#answer-211_98">Opción 1</a></label><input type="radio" name="option211_95" id="i211_98" class="exe-radio-option exe-radio-option-0-4-211_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-211_98"><div id="taans211_98" class="block iDevice_content">
+<p>hla</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i211_101" class="sr-av"><a href="#answer-211_101">Opción 2</a></label><input type="radio" name="option211_95" id="i211_101" class="exe-radio-option exe-radio-option-1-4-211_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-211_101"><div id="taans211_101" class="block iDevice_content">
+<p>Mnd</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i211_282" class="sr-av"><a href="#answer-211_282">Opción 3</a></label><input type="radio" name="option211_95" id="i211_282" class="exe-radio-option exe-radio-option-2-4-211_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-211_282"><div id="taans211_282" class="block iDevice_content">
+<p>Mno</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i211_285" class="sr-av"><a href="#answer-211_285">Opción 4</a></label><input type="radio" name="option211_95" id="i211_285" class="exe-radio-option exe-radio-option-3-4-211_95-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-211_285"><div id="taans211_285" class="block iDevice_content">
+<p>Mdo</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b211_95" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b211_95" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b211_95" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+<section id="sa3b211_95" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-211_98">Incorrecto</a><span> (<a href="#sa0b211_95">Retroalimentación</a>)</span></li>
+<li><a href="#answer-211_101">Incorrecto</a><span> (<a href="#sa1b211_95">Retroalimentación</a>)</span></li>
+<li><a href="#answer-211_282">Opción correcta</a><span> (<a href="#sa2b211_95">Retroalimentación</a>)</span></li>
+<li><a href="#answer-211_285">Incorrecto</a><span> (<a href="#sa3b211_95">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="booleanos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="mtodos_de_cadena_de_caracteres.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

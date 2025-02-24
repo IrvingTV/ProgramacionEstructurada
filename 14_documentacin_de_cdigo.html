@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -9,11 +10,14 @@
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Irving Torres Viveros" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
-<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
@@ -23,15 +27,24 @@
 <nav id="siteNav">
 <ul>
    <li><a href="index.html" class="daddy main-node">Programación Estructurada</a></li>
-   <li class="current-page-parent"><a href="1_introduccin_a_la_programacin_estructurada.html" class="current-page-parent daddy">1. Introducción a la programación estructurada.</a>
+   <li class="current-page-parent"><a href="i_introduccin_a_la_programacin_estructurada.html" class="current-page-parent daddy">I. Introducción a la programación estructurada</a>
    <ul>
-      <li><a href="11_clasificacin_de_paradigmas_de_programacin.html" class="no-ch">1.1 Clasificación de paradigmas de programación</a></li>
+      <li><a href="11_clasificacin_de_paradigmas_de_programacin.html" class="daddy">1.1 Clasificación de paradigmas de programación</a>
+      <ul class="other-section">
+         <li><a href="actividad_11.html" class="no-ch">Actividad 1.1</a></li>
+      </ul>
+      </li>
       <li><a href="12_entornos_de_desarrollo_integrados.html" class="no-ch">1.2 Entornos de desarrollo integrados</a></li>
-      <li><a href="13_buenas_prcticas_de_codificacin.html" class="no-ch">1.3 Buenas prácticas de codificación</a></li>
+      <li><a href="13_buenas_prcticas_de_codificacin.html" class="daddy">1.3 Buenas prácticas de codificación</a>
+      <ul class="other-section">
+         <li><a href="actividad_12.html" class="no-ch">Actividad 1.2</a></li>
+      </ul>
+      </li>
       <li id="active"><a href="14_documentacin_de_cdigo.html" class="active no-ch">1.4 Documentación de código</a></li>
+      <li><a href="ii_aprendizaje_basado_en_problemas_instalacin_de_visual_studio_code_contexto.html" class="no-ch">I.I Aprendizaje Basado en Problemas: Instalación de Visual Studio Code Contexto:</a></li>
    </ul>
    </li>
-   <li><a href="2_estructuras_de_control.html" class="daddy">2. Estructuras de Control</a>
+   <li><a href="ii_estructuras_de_control.html" class="daddy">II. Estructuras de Control</a>
    <ul class="other-section">
       <li><a href="21_tipos_de_datos_y_funciones_de_entradasalidaio_en_la_programacin_estructurada.html" class="no-ch">2.1 Tipos de datos y funciones de entrada-salida(I/O) en la programación estructurada.</a></li>
       <li><a href="22_estructuras_de_control_selectivas_e_iterativas.html" class="no-ch">2.2 Estructuras de control Selectivas e Iterativas</a></li>
@@ -94,16 +107,156 @@
       <li><a href="ejercicios_condicionales.html" class="no-ch">Ejercicios Condicionales</a></li>
    </ul>
    </li>
+   <li><a href="iii_subprogramas_y_recursividad.html" class="daddy">III. Subprogramas y recursividad</a>
+   <ul class="other-section">
+      <li><a href="31_caractersticas_de_los_tipos_de_subprogramas_funciones_y_procedimientos.html" class="no-ch">3.1 Características de los tipos de subprogramas: Funciones y Procedimientos</a></li>
+   </ul>
+   </li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="13_buenas_prcticas_de_codificacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_estructuras_de_control.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="actividad_12.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ii_aprendizaje_basado_en_problemas_instalacin_de_visual_studio_code_contexto.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">1.4 Documentación de código</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id39">
+<div class="iDevice emphasis0" >
+<div id="ta39_317_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>La documentación de código es un elemento esencial en la programación estructurada, ya que facilita la comprensión, colaboración y mantenimiento del software. Con el apoyo de herramientas generativas basadas en inteligencia artificial, como los modelos de lenguaje, es posible mejorar la calidad y eficiencia de la documentación. Este apartado explora las mejores prácticas y ejemplos en Python.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>1. Uso de comentarios efectivos</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Los comentarios deben ser claros y concisos, explicando cómo funciona el código o por qué se tomó una decisión específica. Los modelos generativos pueden ayudar a generar descripciones precisas mediante la ingeniería de prompts.</p>
+<p>Ejemplo:</p>
+<pre><span style="font-size: 12pt;"><code># Prompt sugerido para documentar un código complejo:
+# "Describe el siguiente código en un lenguaje sencillo para un estudiante."
+
+def calcular_factores(numero):
+    """
+    Calcula los factores de un número entero dado.
+
+    Args:
+        numero (int): El número para el cual se calcularán los factores.
+
+    Returns:
+        list: Una lista de factores del número.
+    """
+    factores = []
+    for i in range(1, numero + 1):
+        if numero % i == 0:
+            factores.append(i)
+    return factores
+</code></span></pre>
+<p><br><br></p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>2. Generación automática de docstrings</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Herramientas como ChatGPT pueden generar docstrings automáticamente para funciones y clases, asegurando que la estructura de la documentación sea uniforme.</p>
+<pre><code>#<span style="font-size: 12pt;"> Prompt sugerido:
+# "Genera un docstring para esta función en formato Google."
+
+def convertir_celsius_a_fahrenheit(celsius):
+    """
+    Convierte una temperatura de grados Celsius a Fahrenheit.
+
+    Args:
+        celsius (float): Temperatura en grados Celsius.
+
+    Returns:
+        float: Temperatura convertida a grados Fahrenheit.
+    """
+    return (celsius * 9/5) + 32
+</span></code></pre></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>3. Uso de herramientas generativas para ejemplos de uso</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Además de documentar, los modelos generativos pueden sugerir ejemplos prácticos del uso de una función o clase.</p>
+<p>Ejemplo:</p>
+<pre><span style="font-size: 12pt;"><code># Prompt sugerido:
+# "Crea un ejemplo de cómo usar esta función en un caso práctico."
+
+def calcular_area_rectangulo(base, altura):
+    """
+    Calcula el área de un rectángulo.
+
+    Args:
+        base (float): La base del rectángulo.
+        altura (float): La altura del rectángulo.
+
+    Returns:
+        float: El área del rectángulo.
+    """
+    return base * altura
+
+# Ejemplo sugerido por la herramienta generativa:
+if __name__ == "__main__":
+    base = 5.0
+    altura = 3.0
+    print(f"El área del rectángulo es {calcular_area_rectangulo(base, altura)} metros cuadrados.")
+</code></span></pre></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>4. Mejora de la legibilidad mediante prompts</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Las herramientas generativas pueden sugerir cómo mejorar la estructura del código para hacerlo más legible, por ejemplo, separando lógica compleja en funciones más pequeñas.</p>
+<p>Ejemplo:</p>
+<pre><span style="font-size: 12pt;"><code># Código original:
+def procesar_datos(datos):
+    resultados = []
+    for dato in datos:
+        if dato &gt; 10:
+            resultados.append(dato * 2)
+    return resultados
+
+# Prompt sugerido:
+# "Divide este código en funciones más pequeñas con nombres descriptivos."
+
+def filtrar_datos(datos):
+    return [dato for dato in datos if dato &gt; 10]
+
+def duplicar_datos(datos):
+    return [dato * 2 for dato in datos]
+
+def procesar_datos(datos):
+    datos_filtrados = filtrar_datos(datos)
+    return duplicar_datos(datos_filtrados)
+
+</code></span></pre></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>5. Generación de documentación técnica completa</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Herramientas generativas pueden ayudar a crear documentación detallada para proyectos completos, como archivos README.md.</p>
+<p>Ejemplo:</p>
+<pre><span style="font-size: 12pt;"><code># Proyecto: Gestor de Tareas
+
+## Descripción
+Aplicación sencilla para gestionar tareas pendientes. Permite agregar, eliminar y listar tareas.
+
+## Requisitos
+- Python 3.8+
+
+## Instalación
+```bash
+pip install gestor-tareas
+</code></span></pre>
+<p><strong>Uso</strong></p>
+<pre><span style="font-size: 12pt;"><code>from gestor_tareas import Gestor
+
+gestor = Gestor()
+gestor.agregar_tarea("Estudiar Python")
+print(gestor.listar_tareas())
+</code></span></pre>
+<p><strong>Beneficios de las&nbsp;herramientas generativas en la documentación</strong></p>
+<div class="exe-fx exe-paginated">
+<h2>**Ahorro de tiempo:**</h2>
+<p>Automatiza tareas repetitivas como escribir docstrings o ejemplos.</p>
+<h2>**Consistencia:**</h2>
+<p>Garantiza que la documentación tenga un formato uniforme.</p>
+<h2>**Calidad:**</h2>
+<p>Mejora la claridad y comprensión del código.</p>
+<h2>**Soporte educativo:**</h2>
+<p>Facilita el aprendizaje y adopción de buenas prácticas.</p>
+</div></div><article class="exe-udlContent-content-visual js-hidden"><header class='exe-udlContent-alt-content-title'><h2>Apoyo visual</h2></header><p><img src="https://static.platzi.com/media/user_upload/Readmemd-52ba4cf8-f6d4-45ff-bb23-646a3bb26c3d.jpg" style="display: block; margin-left: auto; margin-right: auto;"></p><button class="exe-udlContent-alt-content-hide">Cerrar</button></article></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Referencias</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_319_2" class="block iDevice_content">
+<div class="exe-text"><ol>
+<li>Python PEP 257 - Docstring Conventions: [https://peps.python.org/pep-0257/](https://peps.python.org/pep-0257/)</li>
+<li>Real Python - Writing Comments and Documentation: [https://realpython.com/documenting-python-code/](https://realpython.com/documenting-python-code/)</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
 </div>
@@ -111,7 +264,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="13_buenas_prcticas_de_codificacin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="2_estructuras_de_control.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="actividad_12.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="ii_aprendizaje_basado_en_problemas_instalacin_de_visual_studio_code_contexto.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>

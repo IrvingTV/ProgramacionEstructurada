@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.1 Características de los tipos de subprogramas: Funciones y Procedimientos | PragamacionEstructurada </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Irving Torres Viveros" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<link rel="stylesheet" type="text/css" href="udl-content.css" />
+<script type="text/javascript" src="udl-content.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-52"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">PragamacionEstructurada</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programación Estructurada</a></li>
+   <li><a href="i_introduccin_a_la_programacin_estructurada.html" class="daddy">I. Introducción a la programación estructurada</a>
+   <ul class="other-section">
+      <li><a href="11_clasificacin_de_paradigmas_de_programacin.html" class="daddy">1.1 Clasificación de paradigmas de programación</a>
+      <ul class="other-section">
+         <li><a href="actividad_11.html" class="no-ch">Actividad 1.1</a></li>
+      </ul>
+      </li>
+      <li><a href="12_entornos_de_desarrollo_integrados.html" class="no-ch">1.2 Entornos de desarrollo integrados</a></li>
+      <li><a href="13_buenas_prcticas_de_codificacin.html" class="daddy">1.3 Buenas prácticas de codificación</a>
+      <ul class="other-section">
+         <li><a href="actividad_12.html" class="no-ch">Actividad 1.2</a></li>
+      </ul>
+      </li>
+      <li><a href="14_documentacin_de_cdigo.html" class="no-ch">1.4 Documentación de código</a></li>
+      <li><a href="ii_aprendizaje_basado_en_problemas_instalacin_de_visual_studio_code_contexto.html" class="no-ch">I.I Aprendizaje Basado en Problemas: Instalación de Visual Studio Code Contexto:</a></li>
+   </ul>
+   </li>
+   <li><a href="ii_estructuras_de_control.html" class="daddy">II. Estructuras de Control</a>
+   <ul class="other-section">
+      <li><a href="21_tipos_de_datos_y_funciones_de_entradasalidaio_en_la_programacin_estructurada.html" class="no-ch">2.1 Tipos de datos y funciones de entrada-salida(I/O) en la programación estructurada.</a></li>
+      <li><a href="22_estructuras_de_control_selectivas_e_iterativas.html" class="no-ch">2.2 Estructuras de control Selectivas e Iterativas</a></li>
+      <li><a href="23_sintaxis_de_un_lenguaje_de_programacin_estructurada.html" class="no-ch">2.3 Sintaxis de un lenguaje de programación estructurada</a></li>
+   </ul>
+   </li>
+   <li><a href="python.html" class="daddy">Python</a>
+   <ul class="other-section">
+      <li><a href="introduccin.html" class="no-ch">Introducción</a></li>
+      <li><a href="instalacin_e_idle.html" class="no-ch">Instalación e IDLE</a></li>
+      <li><a href="tipos_de_ejecucin.html" class="no-ch">Tipos de ejecución</a></li>
+      <li><a href="tipos_de_datos.html" class="daddy">Tipos de Datos</a>
+      <ul class="other-section">
+         <li><a href="type.html" class="no-ch">type()</a></li>
+         <li><a href="numricos_o_nmeros_clases_int_y_float.html" class="no-ch">Numéricos o Números (clases int y float)</a></li>
+         <li><a href="booleanos.html" class="no-ch">Booleanos</a></li>
+         <li><a href="cadena_de_caracteres_string.html" class="daddy">Cadena de Caracteres (String)</a>
+         <ul class="other-section">
+            <li><a href="mtodos_de_cadena_de_caracteres.html" class="no-ch">Métodos de Cadena de Caracteres</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="variables.html" class="no-ch">Variables</a></li>
+      <li><a href="entrada_y_salida_por_terminal.html" class="daddy">Entrada y Salida por Terminal</a>
+      <ul class="other-section">
+         <li><a href="entrada_por_terminal_input.html" class="no-ch">Entrada por terminal (input())</a></li>
+         <li><a href="salida_por_terminal_print.html" class="no-ch">Salida por terminal (print())</a></li>
+      </ul>
+      </li>
+      <li><a href="operadores.html" class="daddy">Operadores</a>
+      <ul class="other-section">
+         <li><a href="operadores_aritmeticos.html" class="no-ch">Operadores Aritmeticos</a></li>
+         <li><a href="pemdas.html" class="no-ch">PEMDAS</a></li>
+         <li><a href="operadores_lgicos.html" class="no-ch">Operadores Lógicos</a></li>
+         <li><a href="operadores_relacionales.html" class="no-ch">Operadores Relacionales</a></li>
+      </ul>
+      </li>
+      <li><a href="sentencia_condicional_if.html" class="no-ch">Sentencia Condicional IF</a></li>
+      <li><a href="comentario.html" class="no-ch">Comentario</a></li>
+      <li><a href="lista.html" class="daddy">Lista</a>
+      <ul class="other-section">
+         <li><a href="agregar_elemento.html" class="no-ch">Agregar elemento</a></li>
+         <li><a href="remover_elemento.html" class="no-ch">Remover elemento</a></li>
+         <li><a href="index0.html" class="no-ch">index</a></li>
+         <li><a href="cambiar_un_elemento.html" class="no-ch">Cambiar un elemento</a></li>
+      </ul>
+      </li>
+      <li><a href="tupla.html" class="no-ch">Tupla</a></li>
+      <li><a href="ejercicios_de_datos_simples.html" class="no-ch">Ejercicios de Datos Simples</a></li>
+      <li><a href="ciclo_for.html" class="no-ch">Ciclo For</a></li>
+      <li><a href="ciclo_while.html" class="no-ch">Ciclo While</a></li>
+      <li><a href="funciones.html" class="no-ch">Funciones</a></li>
+      <li><a href="recursin.html" class="no-ch">Recursión</a></li>
+      <li><a href="archivo.html" class="no-ch">Archivo</a></li>
+      <li><a href="importaciones.html" class="no-ch">Importaciones</a></li>
+      <li><a href="errores.html" class="no-ch">Errores</a></li>
+      <li><a href="programacin_orientada_a_objetos.html" class="no-ch">Programación Orientada a Objetos</a></li>
+      <li><a href="ejercicios_cadenas.html" class="no-ch">Ejercicios Cadenas</a></li>
+      <li><a href="ejercicios_condicionales.html" class="no-ch">Ejercicios Condicionales</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="iii_subprogramas_y_recursividad.html" class="current-page-parent daddy">III. Subprogramas y recursividad</a>
+   <ul>
+      <li id="active"><a href="31_caractersticas_de_los_tipos_de_subprogramas_funciones_y_procedimientos.html" class="active no-ch">3.1 Características de los tipos de subprogramas: Funciones y Procedimientos</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="iii_subprogramas_y_recursividad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.1 Características de los tipos de subprogramas: Funciones y Procedimientos</h1></header>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id49">
+<div class="iDevice emphasis0" >
+<div id="ta49_333_2" class="block iDevice_content">
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice" id="id51">
+<div class="iDevice emphasis0" >
+<div id="ta51_335_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-1"><h2>Subprogramas y Recursividad en Python</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En programación, los <strong>subprogramas</strong> son bloques de código que realizan una tarea específica y pueden ser invocados desde otras partes del programa. Estos se dividen en dos categorías principales: <strong>funciones y procedimientos</strong>. En Python, no existe una distinción formal entre funciones y procedimientos, ya que ambos se implementan utilizando la palabra clave def. Sin embargo, conceptualmente:</p>
+<ul>
+<li><strong>Funciones</strong>: Subprogramas que devuelven un valor.</li>
+<li><strong>Procedimientos</strong>: Subprogramas que no devuelven un valor (realizan una acción)</li>
+</ul>
+<p>Además, la recursividad es una técnica en la que una función se llama a sí misma para resolver un problema. A continuación, se desarrolla este tema con ejemplos y ejercicios.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>1. Funciones en Python</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Una <strong>función</strong> es un subprograma que toma unos datos de entrada (parámetros), realiza una tarea y devuelve un resultado.&nbsp;En Python, las funciones se definen utilizando la palabra clave <strong>def</strong>.</p>
+<p>Sintaxis de una Función</p>
+<div class="highlighted-code language-python">
+<div>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def nombre_funcion(parametro1, parametro2, ...):
+    # Bloque de código
+    return valor  # Devuelve un valor</code></pre>
+</div>
+</div>
+</div>
+</div>
+<ul>
+<li><strong>def</strong>: Palabra clave para definir una función.</li>
+<li><strong>nombre_funcion</strong>: Identificador de la función.</li>
+<li><strong>parametro1, parametro2, ...</strong>: Parámetros de entrada (opcionales).</li>
+<li><strong>return</strong>: Devuelve un valor (opcional).</li>
+</ul>
+<p><strong>Ejemplo</strong>: Función para sumar dos números.</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def sumar(a, b):
+    return a + b
+
+resultado = sumar(5, 3)
+print("La suma es:", resultado)  # Salida: La suma es: 8</code></pre>
+</div>
+</div></div></div></section></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id53">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">2. Características de los Subprogramas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta53_332_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block"><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="exe-fx exe-accordion">
+<h2>Reutilización de Código:</h2>
+<p>Los subprogramas permiten encapsular código que se utiliza repetidamente, evitando la duplicación.</p>
+<h2>Modularidad:</h2>
+<p>Facilitan la organización del código en módulos independientes y fáciles de mantener.</p>
+<h2>Abstracción:</h2>
+<p>Ocultan los detalles de implementación, permitiendo al programador centrarse en la lógica de alto nivel.</p>
+<h2>Parámetros y Argumentos:</h2>
+<p>Los parámetros son variables definidas en la función, mientras que los argumentos son los valores pasados al llamar la función.</p>
+<h2>Ámbito de Variables:</h2>
+<p>Las variables definidas dentro de un subprograma tienen un ámbito local y no son accesibles fuera de él.</p>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice em_iDevice_udl_eng_aprenderaprender" id="id54">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header" style="background-image:url(icon_udl_eng_aprenderaprender.svg)"><span class="iDeviceTitle">&nbsp;</span></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta54_333_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header exe-udlContent-character-3"><h2>Recursividad</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>La <strong>recursividad</strong> es una técnica en la que una función se llama a sí misma para resolver un problema. Es útil para problemas que pueden dividirse en subproblemas más pequeños del mismo tipo.</p>
+<p><strong>Sintaxis:</strong></p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def funcion_recursiva(parametros):
+    if condicion_parada:  # Caso base
+        return valor
+    else:
+        return funcion_recursiva(nuevos_parametros)  # Llamada recursiva</code></pre>
+</div>
+</div>
+<p><strong>Caso Base</strong>: Condición que detiene la recursión.<br><strong>Llamada Recursiva</strong>: La función se llama a sí misma con nuevos parámetros.</p>
+<p><strong>Ejemplo:</strong></p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def factorial(n):
+    if n == 0:  # Caso base
+        return 1
+    else:
+        return n * factorial(n - 1)  # Llamada recursiva
+
+# Llamada a la función
+print(factorial(5))  # Salida: 120</code></pre>
+</div>
+</div></div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos y Ejercicios Comentados</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_335_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Ejemplo 1: Función para Calcular el Máximo Común Divisor (MCD)</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def mcd(a, b):
+    """
+    Calcula el máximo común divisor de dos números usando el algoritmo de Euclides.
+    """
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+# Llamada a la función
+print(mcd(48, 18))  # Salida: 6</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Ejemplo 2: Procedimiento para Imprimir una Lista</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def imprimir_lista(lista):
+    """
+    Imprime cada elemento de una lista.
+    """
+    for elemento in lista:
+        print(elemento)
+
+# Llamada al procedimiento
+imprimir_lista([1, 2, 3, 4, 5])</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Ejemplo 3: Función Recursiva para la Serie de Fibonacci</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def fibonacci(n):
+    """
+    Calcula el n-ésimo número de la serie de Fibonacci.
+    """
+    if n &lt;= 1:  # Caso base
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)  # Llamada recursiva
+
+# Llamada a la función
+print(fibonacci(6))  # Salida: 8</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Ejercicio 1: Función para Calcular el Promedio</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def promedio(lista):
+    """
+    Calcula el promedio de una lista de números.
+    """
+    return sum(lista) / len(lista)
+
+# Llamada a la función
+print(promedio([10, 20, 30, 40, 50]))  # Salida: 30.0</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Ejercicio 2: Procedimiento para Ordenar una Lista</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def ordenar_lista(lista):
+    """
+    Ordena una lista de números en orden ascendente.
+    """
+    lista.sort()
+    print("Lista ordenada:", lista)
+
+# Llamada al procedimiento
+ordenar_lista([34, 12, 56, 7, 23])  # Salida: Lista ordenada: [7, 12, 23, 34, 56]</code></pre>
+</div>
+</div></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Ejercicio 3: Función Recursiva para la Suma de Dígitos</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>def suma_digitos(n):
+    """
+    Calcula la suma de los dígitos de un número de forma recursiva.
+    """
+    if n &lt; 10:  # Caso base
+        return n
+    else:
+        return n % 10 + suma_digitos(n // 10)  # Llamada recursiva
+
+# Llamada a la función
+print(suma_digitos(1234))  # Salida: 10</code></pre>
+</div>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper UDLcontentIdevice em_iDevice" id="id57">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Consideraciones sobre la Recursividad</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta57_336_2" class="block iDevice_content">
+<div class="exe-udlContent exe-udlContent-engagement"><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Ventajas</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Simplifica la solución de problemas complejos.<br>Código más legible y elegante.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Desventajas</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>Puede consumir mucha memoria si no se maneja correctamente.<br>Riesgo de desbordamiento de pila (stack overflow) si no hay un caso base bien definido.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Optimización</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><p>En Python, se puede usar la técnica de memoización para almacenar resultados intermedios y evitar cálculos repetidos.</p></div></div></section><section class="exe-udlContent-block js-hidden"><header class="exe-udlContent-header"><h2>Ejemplo de Memoización</h2></header><div class="exe-udlContent-content"><div class="exe-udlContent-content-main"><div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>from functools import lru_cache
+
+@lru_cache(maxsize=None)
+def fibonacci(n):
+    if n &lt;= 1:
+        return n
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+# Llamada a la función
+print(fibonacci(50))  # Salida: 12586269025</code></pre>
+</div>
+</div>
+</div></div></section></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="iii_subprogramas_y_recursividad.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

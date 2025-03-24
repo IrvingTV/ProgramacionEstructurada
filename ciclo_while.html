@@ -167,6 +167,70 @@ while x &lt; 35:
 </div>
 </div>
 </article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id58">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplo práctico: Validación de entrada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta58_331_2" class="block iDevice_content">
+<div class="exe-text"><p>Un uso común del bucle <strong>while</strong> es validar la entrada del usuario hasta que se ingrese un valor válido.</p>
+<div class="highlighted-code code-style-2 language-python">
+<div>
+<pre><code>while True:
+    entrada = input("Ingresa un número positivo: ")
+    if entrada.isdigit() and int(entrada) &gt; 0:
+        print(f"Has ingresado: {entrada}")
+        break
+    else:
+        print("Entrada inválida. Intenta de nuevo.")</code></pre>
+</div>
+</div>
+<p>Explicación:</p>
+<ul>
+<li>El bucle continúa hasta que el usuario ingresa un número positivo.<br />entrada.isdigit() verifica si la entrada es un número.</li>
+<li>Si la entrada es válida, se imprime el número y el bucle termina con break.</li>
+<li>Si la entrada no es válida, se muestra un mensaje de error y el bucle continúa.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id59">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplo práctico: Menú interactivo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta59_332_2" class="block iDevice_content">
+<div class="exe-text"><div class="highlighted-code code-style-2 language-python line-numbers">
+<div>
+<pre><code>while True:
+    print("1. Opción 1")
+    print("2. Opción 2")
+    print("3. Salir")
+    opcion = input("Elige una opción: ")
+
+    if opcion == "1":
+        print("Has elegido la Opción 1")
+    elif opcion == "2":
+        print("Has elegido la Opción 2")
+    elif opcion == "3":
+        print("Saliendo...")
+        break
+    else:
+        print("Opción inválida. Intenta de nuevo.")</code></pre>
+</div>
+</div>
+<p>Explicación:</p>
+<ul>
+<li>El menú se muestra repetidamente hasta que el usuario elige la opción "3" para salir.<br />Cada opción ejecuta una acción específica.</li>
+<li>Si el usuario ingresa una opción inválida, se muestra un mensaje de error.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
 </div>
